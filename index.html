@@ -69,11 +69,11 @@
       const data = { name, phone, email };
 
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbzdCwRgQlWNM9Wc6269jUfybKRzhJkLeEOpw5c6YTOLdOMlSOcZzpnXQwqX0FD9EBY4yg/exec', {
-  method: 'POST',
-  mode: 'cors',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(data)
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzDXhQ12bmFu2s6Fzr6v6ZArDIXm-Y0SY-g2E3uFAapV0-MAySoLVLemKZGFMiv7XLXRA/exec', {
+        method: 'POST',
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
 });
 
         const result = await response.json();
